@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ollama-faq",
+    "path": "vault/raw/Ollama FAQ.md",
+    "title": "Local Runtime Settings",
+    "topic": "Local AI",
+    "description": "Context settings, GPU placement, and local-only operation.",
+    "publisher": "Ollama",
+    "url": "https://github.com/ollama/ollama/blob/main/docs/faq.mdx",
+    "related": [
+      {
+        "id": "ollama-context",
+        "reason": "Context length is one of the settings that controls memory use."
+      },
+      {
+        "id": "ollama-embeddings",
+        "reason": "A local runtime can also serve embedding models for retrieval."
+      }
+    ],
+    "sha256": "7fc6dd6825f927e7e9e41f4b0d3e58b979d3c03cb29783f697fdc79a1c07a4d1",
+    "retrieved_on": "2026-09-29"
+  },
+  {
+    "id": "ollama-context",
+    "path": "vault/raw/Ollama Context Length.md",
+    "title": "Context Window Memory",
+    "topic": "Local AI",
+    "description": "How the context window affects memory requirements.",
+    "publisher": "Ollama",
+    "url": "https://github.com/ollama/ollama/blob/main/docs/context-length.mdx",
+    "related": [
+      {
+        "id": "ollama-faq",
+        "reason": "Runtime configuration determines the allocated context."
+      },
+      {
+        "id": "ollama-embeddings",
+        "reason": "Retrieving selected passages helps keep the generation context focused."
+      }
+    ],
+    "sha256": "8414ca2ad9c67fbd9bd1497bf352fb60993b2b5b69531118f456f9b31af87aa7",
+    "retrieved_on": "2026-09-29"
+  },
+  {
+    "id": "ollama-embeddings",
+    "path": "vault/raw/Ollama Embeddings.md",
+    "title": "Embeddings for Retrieval",
+    "topic": "Retrieval",
+    "description": "Vectors, similarity search, and the retrieval stage of RAG.",
+    "publisher": "Ollama",
+    "url": "https://docs.ollama.com/capabilities/embeddings.md",
+    "related": [
+      {
+        "id": "ollama-context",
+        "reason": "A RAG workflow places selected search results in the model context."
+      },
+      {
+        "id": "ollama-faq",
+        "reason": "The same local runtime can host generation and embedding models."
+      }
+    ],
+    "sha256": "62d7c8ba5124825abd30fa10a532d92c4a2e35598c5e7f9549c5480411e95c92",
+    "retrieved_on": "2026-09-29"
+  }
+]
